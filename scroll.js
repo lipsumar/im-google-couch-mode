@@ -16,11 +16,15 @@ function next(){
 function display(){
 	var img = document.createElement('img');
 	img.src = srcs[currentIndex];
-	img.style.top = currentTop;
+	img.style.transform = 'translate3d(0,'+currentTop+'px,0)';
+	img.style['-webkit-transform'] = 'translate3d(0,'+currentTop+'px,0)';
 	img._cache_top = currentTop;
 	document.body.appendChild(img);
 
+
 	var imgHeight = img.getClientRects()[0].height;
+
+
 	img._cache_height = imgHeight;
 	imgs.push(img);
 
@@ -49,6 +53,7 @@ function animate(){
 
 		img._cache_top-=speed;
 		img.style.transform = 'translate3d(0,'+img._cache_top+'px,0)';
+		img.style['-webkit-transform'] = 'translate3d(0,'+img._cache_top+'px,0)';
 
 	});
 
