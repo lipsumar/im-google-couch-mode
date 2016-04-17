@@ -1,0 +1,22 @@
+{
+  "name": "im-google-couch-mode",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seed.js",
+    "build": "browserify scroll.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lipsumar/im-google-couch-mode.git"
+  },
+  "author": "Emmanuel Pire <piremmanuel@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lipsumar/im-google-couch-mode/issues"
+  },
+  "homepage": "https://github.com/lipsumar/im-google-couch-mode#readme"
+}
